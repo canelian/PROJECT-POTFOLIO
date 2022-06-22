@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', 
+  Courier, monospace;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 높이값 화면에 채움 */
+}
+
+.container {
+  width: 800px;
+  background: #efefef;
+  /* padding-bottom: 20px; */
+  padding: 30px; 
+}
+
+.container > h1 {
+  margin-bottom: 1em;
+}
+
+.main-image {
+  width: 800px;
+  height: 460px;
+  margin-bottom: 20px;
+}
+
+.main-image > img {
+  border-radius: 37px;
+}
+
+.img-thumb {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+
+.img-thumb > li {
+  /* outline: 2px solid red; */
+  width: 129px;
+  float: left;
+  margin-right: 5px;
+}
+
+.img-thumb > li:last-child {
+  margin-right: 0;
+}
+
+.img-thumb > li > img {
+  width: 100%;
+  display: block;
+}
+
+.img-thumb > li:hover {
+  border: 3px solid rgb(86, 200, 245);
+  box-sizing: border-box;
+  overflow: hidden;
+}

@@ -1,0 +1,159 @@
+:root {
+  --main-color: #348e4c;
+  --text-color: #333;
+  --heading1: 50px;
+  --heading2: 40px;
+  --basefont-size: 18px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  list-style-type: none;
+  color: var(--text-color);
+  text-decoration: none;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-size: var(--basefont-size);
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--heading1);
+}
+
+h2 {
+  font-size: var(--heading2);
+}
+
+html, body {
+  height: 100%;
+}
+
+#main-header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 60px;
+}
+
+#main-header > h1 {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  outline: 1px solid red;
+  font-size: 0;
+}
+
+#main-header > nav {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-weight: 700;
+}
+
+#main-header > nav > ul > li {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+
+#main-header > nav a:hover {
+  color: var(--main-color);
+}
+
+.main {
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #ccc;
+}
+
+/* B */
+.main .col {
+  width: calc(100% / 4);
+  height: 100%;
+  background: #abc;
+  position: relative;
+  float: left;
+}
+
+/* B */
+.main .col h2 {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(50% - 109px / 2);
+}
+
+/* B */
+.main .col h2 span {
+  display: block;
+  font-size: small;
+  font-weight: normal;
+}
+
+/* B */
+.btn-link {
+  background-color: #000;
+  color: #fff;
+  width: 124px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 120px;
+  left: calc(50% - 124px / 2);
+  
+}
+
+/* B */
+.btn-link:hover, .btn-link:active {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* 첫번째 컬럼 배경 스타일 지정 */
+.main .col:first-child {
+  background-image: url(./img/beijing.jpg);
+  background-size: cover;
+}
+
+/* hongkong*/
+.main #section2 {
+  background-image: url(./img/hongkong.jpg);
+  background-size: cover;
+}
+
+/* osaka */
+.main #section3 {
+  background-image: url(./img/osaka.jpg);
+  background-size: cover;
+}
+
+/* bangkok */
+.main #section4 {
+  background-image: url(./img/bangkok.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,42 @@
+:root {
+  --basefont-size: 60px;
+  --basebackground: lightgreen;
+}
+
+@font-face {
+  font-family: 'digital-7-mono';
+  src: url('/digital-clock/font/digital-7-mono.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--basebackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'digital-7-mono', monospace;
+  font-size: var(--basefont-size);
+}
+
+.container {
+  background: skyblue;
+  box-shadow: 0 8px 6px rgb(0, 0, 0, 0.3), 0 0 8px rgb(0, 0, 0, 0.7) inset;
+  width: 550px;
+  height: 140px;
+  padding: 30px;
+  padding-left: 50px;
+  display: flex;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid black;
+  border-radius: 10px;
+  font-weight: 650;  
+}
+

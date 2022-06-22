@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 596px;
+  height: 338px;
+}
+
+a.danji {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*background: rgba(1, 182, 1, 0.8);
+  border: 3px solid black;*/
+  position: relative;
+  background-image: 
+    url('../img/banana-cf.gif');
+  background-position: 0 0, right;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.danji:hover {
+  cursor: url(../img/danji-milk-icon50.png) 20 30, auto;
+}
+
+.korean {
+  width: 40%;
+  position: absolute;
+  top: 260px;
+  right: 20px;
+  animation-name: korean;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function:
+    cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes korean {
+  0% {
+    right: -800px;
+  }
+  10% {
+    right: 50px;
+  }
+  100% {}
+}
+
+.logo {
+  width: 13%;
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  animation-name: logo;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function:
+    cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes logo {
+  0% {
+    left: -800px;
+  }
+  10% {
+    right: 50px;
+  }
+  100% {}
+}
+
+.btn {
+  width: 100px;
+  position: absolute;
+  top: 290px;
+  left: 200px;
+  background-color: rgb(242, 222, 48, 0.7);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#container-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/Bing-bananamilk-space1.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+#btn-br:after {
+  display: block;
+  content: "여기 좀 봐줘유";
+  white-space: pre;
+}
+
+#btn-br:hover:after {
+  content: "사러 가볼까유?";
+}
+
+

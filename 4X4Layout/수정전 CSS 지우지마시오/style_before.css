@@ -1,0 +1,115 @@
+:root {
+  --text-color: #333;
+  --bg-color: #fff; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  font-size: 100%;  
+}
+
+h1 {
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+main {
+  background: yellow;
+  position: relative;
+  float: right;
+  width: calc(100% - 330px); /*메인너비 100% - 330*/
+  height: 100%;
+  
+}
+
+main > .box {
+  width: 50%;
+  height: 50%;
+  outline: 2px solid black;
+  text-align: center;
+  float: left;
+  line-height: 55px;
+  padding-top: 415px;
+  color: white;
+  
+}
+
+#a {
+  background-image: 
+  url('../img/Basic_Gallery_UI.jpg');
+}
+
+#b {
+  background-image: 
+  url('../img/Homepage.jpg');
+}
+
+#c {
+  background-image: 
+  url('../img/UXUI_Desgin.jpg');
+}
+
+#d {
+  background-image: 
+  url('../img/Mobile.jpg');
+}
+
+/* 버튼 */
+.link-btn {
+  padding: 10px 20px;
+  background: rgba(1, 182, 1, 0.8);
+  border-radius: 10px;
+  color: white;
+}
+
+#main-header {
+  width: 330px;
+  height: 100%;
+  background: #D0F5F5;
+  text-align: center;
+  position: relative;
+  float: left;
+  
+}
+
+#gnb > ul > li > a {
+  width: 226px;
+  height: 49px;
+  outline: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#gnb {
+  padding-top: 100px;
+  padding-bottom: 608px;
+}
