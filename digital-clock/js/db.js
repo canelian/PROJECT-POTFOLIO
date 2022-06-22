@@ -32,10 +32,11 @@ $(function () {
 
     if(min == 50) {
       alert("휴식시간");
-     
-    }
+    } 
 
-
+    
+    
+    
     // html에 날짜 출력
     $('.amp').html(amp);
     $('.hour').html(hour);

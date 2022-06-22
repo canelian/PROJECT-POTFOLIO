@@ -1,5 +1,5 @@
 :root {
-  --basefont-size: 60px;
+  --basefont-size: 55px;
   --basebackground: lightgreen;
 }
 
@@ -27,7 +27,7 @@ body {
 .container {
   background: skyblue;
   box-shadow: 0 8px 6px rgb(0, 0, 0, 0.3), 0 0 8px rgb(0, 0, 0, 0.7) inset;
-  width: 550px;
+  width: 500px;
   height: 140px;
   padding: 30px;
   padding-left: 50px;
