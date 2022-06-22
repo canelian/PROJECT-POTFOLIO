@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'digital-7-mono';
-  src: url('/digital-clock/font/digital-7-mono.ttf')
+  font-family: 'digital7-mono';
+  src: url('/digital-clock/font/digital7-mono.ttf')
   format('truetype');
 }
 
@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'digital-7-mono', monospace;
+  font-family: 'digital7-mono', monospace;
   font-size: var(--basefont-size);
 }
 
