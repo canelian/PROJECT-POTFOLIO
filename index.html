@@ -8,6 +8,7 @@
   <style>
     :root {
       --basefont-size: 30px;
+      --basefont-family: "굴림", sans-serif;
     }
 
     * {
@@ -21,6 +22,7 @@
       background-position: center, center;
       background-repeat: no-repeat;
       background-size: cover;
+      height: 100vh;
     }
 
     h1 {
@@ -39,17 +41,15 @@
     }
 
     .head {
-      width: 750px;
-      height: 800px;
-      margin-top: 50px;
-      margin-left: 50px;
+      margin: 50px;
     }
 
-    .middle {
+    #middle {
       outline: 2px solid pink;
       background: rgba(147, 140, 140, 0.3);
       font-size: var(--basefont-size);
-      font-family: "굴림", sans-serif;
+      font-family: var(--basefont-family);
+      font-weight: bolder;
       color: white;
       padding: 10px;
     }
@@ -58,8 +58,8 @@
       font-family: "빙그레체", sans-serif;
     }
 
-    .number-1 {
-      font-weight: bold;
+    .main-num {
+      color: skyblue;
     }
 
   </style>
@@ -67,15 +67,46 @@
 <body>
   <div class="head">
     <h1>Project</h1>
-    <div class="middle">
+    <div id="middle">
       <ul>
         <li class="number-0">
-          1. 바나나맛우유 배너입니다.
-          <a href="./Banner/index.html" target="_blank" rel="noopener noreferrer">&nbsp;클릭</a>
+          <span class="main-num">1.</span>
+          <a href="./Banner/index.html" target="_blank" rel="noopener noreferrer">바나나맛우유 배너입니다.</a>
         </li>
+        <br>
         <li class="number-1">
-          * 랜덤 이미지 갤러리
-          <a href="./Random-gallery/index.html" target="_blank" rel="noopener noreferrer">&nbsp;클릭</a>    
+          <span class="main-num">2.</span>
+          <a href="./Random-gallery/index.html" target="_blank" rel="noopener noreferrer">랜덤 이미지 갤러리</a>
+        </li>
+        <br>
+        <li class="number-2">
+          <span class="main-num">3.</span>
+          <a href="./digital-clock/index.html" target="_blank" rel="noopener noreferrer">디지털 시계</a>
+        </li>
+        <br>
+        <li class="number-3">
+          <span class="main-num">4.</span>
+          <a href="./4X4Layout/index.html" target="_blank" rel="noopener noreferrer">4레이아웃</a>
+        </li>
+        <br>
+        <li class="number-4">
+          <span class="main-num">5.</span>
+          <a href="./Gallery/Index.html" target="_blank" rel="noopener noreferrer">갤러리</a>
+        </li>
+        <br>
+        <li class="number-5">
+          <span class="main-num">6.</span>
+          <a href="./HorrorRadio/index.html" target="_blank" rel="noopener noreferrer">공포라디오</a>
+        </li>
+        <br>
+        <li class="number-6">
+          <span class="main-num">7.</span>
+          <a href="./Sook-Uni/index.html" target="_blank" rel="noopener noreferrer">숙명여대 홈 제작</a>
+        </li>
+        <br>
+        <li class="number-7">
+          <span class="main-num">8.</span>
+          <a href="./Hello/Index.html" target="_blank" rel="noopener noreferrer">Hello TEST HOME</a>
         </li>
       </ul>
     </div>
