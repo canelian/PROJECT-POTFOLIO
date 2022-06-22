@@ -5,7 +5,8 @@
 
 @font-face {
   font-family: 'digital-7-mono';
-  src: url('/digital-clock/font/digital-7-mono.ttf');
+  src: url('/digital-clock/font/digital-7-mono.ttf')
+  format('truetype');
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 .container {
   background: skyblue;
   box-shadow: 0 8px 6px rgb(0, 0, 0, 0.3), 0 0 8px rgb(0, 0, 0, 0.7) inset;
-  width: 500px;
+  width: 435px;
   height: 140px;
   padding: 30px;
   padding-left: 50px;
@@ -38,5 +39,9 @@ body {
   border: 10px solid black;
   border-radius: 10px;
   font-weight: 650;  
+}
+
+span {
+  margin-left: -20px;
 }
 
