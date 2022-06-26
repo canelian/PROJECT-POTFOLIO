@@ -12,6 +12,9 @@
 body {
   /*width: 1920px;
   height: 1080px;*/
+  display: flex;
+  
+  align-items: center;
   font-size: 100%;  
 }
 
@@ -52,7 +55,7 @@ main {
 main > .box {
   width: 50%;
   height: 50%;
-  /*outline: 2px solid black;*/
+  outline: 2px solid black;
   text-align: center;
   /*position: relative;*/
   right: 0;
@@ -62,6 +65,13 @@ main > .box {
   color: white;
   background-repeat: no-repeat;
 
+}
+
+main .box .title {
+  position: absolute;
+  bottom: 40px;
+  background: pink;
+  width: 100%;
 }
 
 #a {

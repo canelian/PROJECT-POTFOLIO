@@ -1,0 +1,121 @@
+:root {
+  --text-color: #333;
+  --bg-color: #fff;
+}
+
+body {
+  font-size: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* 버튼 */
+.link-btn {
+  padding: 10px 20px;
+  /* border: 1px solid #000; */
+  background: #fff;
+  display: inline-block;
+}
+
+#main-header {
+  width: 330px;
+  height: 100vh;
+  /* background: #ccc; */
+  padding: 48px 52px;
+  position: relative;
+  float: left;
+}
+
+#main-header > h1 {
+  width: 100px;
+  height: 100px;
+  background: #333;
+  margin: 0 auto;
+  margin-bottom: 97px;
+}
+
+#gnb > ul > li > a {
+  width: 226px;
+  height: 49px;
+  outline: 1px solid red;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sns {
+  position: absolute;
+  bottom: 48px;
+  left: 83px;
+}  
+
+.sns a {
+  margin-right: 25px;
+}
+
+/* main너비 = 100% - 330px */
+main {
+  background: #999;
+  float: left;
+  width: calc(100% - 330px);
+  height: 100vh;
+}
+
+main > .box {
+  width: 50%;
+  height: 50%;
+  outline: 2px solid #333;
+  text-align: center;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+} 
+
+main .box .title {
+  position: absolute;
+  bottom: 40px;
+  background: pink;
+  width: 100%;
+}
+
+main .box .title h2 {
+  margin-bottom: 25px;
+  color: #fff;
+  position: absolute;
+}
+
+main > .box:nth-child(1) {
+  background-image: url('../4X4Layout/img/UXUI_Desgin.jpg'); 
+}
+
+main > .box:nth-child(2) {
+  background-image: url('../4X4Layout/img/Homepage.jpg');
+}
+
+main > .box:nth-child(3) {
+  background-image: url('../4X4Layout/img/Basic_Gallery_UI.jpg');
+}
+
+main > .box:nth-child(4) {
+  background-image: url('../4X4Layout/img/Mobile.jpg');
+}
