@@ -4,10 +4,80 @@
   box-sizing: border-box;
 }
 
+body {
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ 
+}
+
+h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ccc;
+  justify-content: center;
+}
+
+#gallery > li {
+  width: 200px;
+  height: 120px;
+  /*outline: 2px solid red;*/
+}
+
+#gallery > li > img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#gallery > li:hover {
+  cursor: pointer;
+  outline: 4px solid red;
+}
+
+/* light box 기본 안보임 */
+#lightbox {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  display: none;
+}
+
+#ligthbox .on {
+  display: flex;
+}
+
+#lightbox .box {
+  position: relative;
+}
+
+#lightbox .box #closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#closeBtn {
+  border: none;
+  padding: 5px 8px;
 }

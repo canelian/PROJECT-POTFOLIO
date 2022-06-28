@@ -1,0 +1,102 @@
+:root {
+  --main-color: #1227e0; /*메인 칼라*/
+  --contianer-width: 1440px; /*페이지 폭*/
+}
+
+body {
+  font-size: 18px;
+  background: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Nanum Myengjo', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  outline: 2px solid red;
+  
+
+}
+
+#main-header {
+  height: 100px;
+  background: #ccc;
+}
+
+#main-header .container {
+  position: relative;
+}
+
+#logo {
+  width: 100px;
+  position: relative;
+  top: 25px;
+}
+
+#gnb {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+#gnb > ul > li {
+  float: left;
+  margin-right: 59px;
+  overflow: hidden;
+  position: relative;
+  left: 100px;
+}
+
+#gnb > ul > li > a {
+  font-weight: 600;
+}
+
+#util-menu {
+  position: absolute;
+  right: 44px;
+  top: 55px;
+  color: #666;
+  font-size: 14px;
+}
+
+#util-menu a {
+  color: #666;
+}
+
+#util-menu span {
+  margin: 0 14px;
+}
+
+#language {
+  font-size: 10px;
+  color: #666;
+  width: 43px;
+  height: 16px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  margin-left: 28px;
+}
+
+#toggleBtn {
+  position: absolute;
+  right: 20px;
+  top: 43px;
+  width: 18px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+  
+}

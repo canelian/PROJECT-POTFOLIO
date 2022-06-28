@@ -1,0 +1,113 @@
+:root {
+  --main-color: #0C2D83;  /* 메인 컬러 */
+  --container-width: 1440px; /* 페이지 폭 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-size: 18px;
+  background: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2 {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.container {
+  width: var(--container-width);
+  /* outline: 1px solid red; */
+  margin: 0 auto;
+}
+
+#main-header {
+  height: 100px;
+  /* background: #ccc; */
+  border-bottom: 1px solid #ddd;
+}
+
+#main-header .container {
+  position: relative;
+}
+
+#main-header h1 {
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+
+#gnb {
+  position: absolute;
+  left: 242px;
+  top: 40px;
+  overflow: hidden;
+}
+
+#gnb > ul > li {
+  float: left;
+  margin-right: 59px;
+  
+}
+
+#gnb > ul > li > a {
+  font-weight: 600;
+}
+
+#gnb > ul > li > a:hover {
+  color: var(--main-color);
+}
+
+#util-menu {
+  position: absolute;
+  right: 55px;
+  top: 44px;
+  color: #666;
+  font-size: 14px;
+}
+
+#util-menu a {
+  color: #666;
+}
+
+#util-menu span {
+  margin: 0 14px;
+}
+
+#language {
+  margin-left: 28px;
+}
+
+#toggleBtn {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  width: 18px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+}
+
+#language {
+  font-size: 10px;
+  color: #666;
+  width: 43px;
+  height: 18px;
+  border: 1px solid #666;
+  border-radius: 10px;
+}
