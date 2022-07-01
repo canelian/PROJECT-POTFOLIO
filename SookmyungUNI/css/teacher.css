@@ -28,6 +28,15 @@ h2 {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 26px;
   font-weight: 800;
+  position: relative;
+  left: 20px;
+  padding-top: 50px;
+  padding-bottom: 23px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -110,4 +119,159 @@ h2 {
   height: 18px;
   border: 1px solid #666;
   border-radius: 10px;
+}
+
+#main-visual {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#main-visual h2{
+  font-size: 46px;
+  letter-spacing: 0.0;
+  
+}
+
+#main-visual .container {
+  height: 550px;
+  background: #ccc;
+  position: relative;
+  background-image: url(../img/main.jpg);
+  background-size: cover;
+  line-height: 4rem;
+}
+
+#main-visual .container h2{
+  position: absolute;
+  left: 59px;
+  top: 148px;
+  color: #fff;
+}
+
+#intro .row {
+  /*background: pink;*/
+  overflow: hidden;
+  padding-left: 20px;
+  right: 20px;
+}
+
+#intro .col {
+  width: 335px;
+  /*outline: 1px solid #ccc;*/
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#intro .col img {
+  width: 335px;
+  height: 315px; 
+}
+
+#notice .container {
+  /*background: lightgreen;*/
+  overflow: hidden;
+  
+}
+
+#notice .col {
+  text-align: center;
+  width: calc(var(--container-width) / 3);/*480px*/
+  float: left;
+}
+
+#notice .col a {
+  font-size: 14px;
+  color: #666;
+}
+
+#sns-banner .container {
+  background: #ccc;
+  background-image: url(../img/Banner.png);
+  height: 163px;
+  font-size: 26px;
+  position: relative;
+  top: 54px;
+}
+
+.banner-title {
+  position: relative;
+  top: 51px;
+  left: 65px;
+  color: white;
+}
+
+.banner-title p {
+  position: relative;
+  top: 10px;
+}
+
+.sns {
+  float: right;
+  position: relative;
+  right: 40px;  
+}
+
+.sns a img {
+  padding-right: 38px;
+}
+
+#main-footer {
+  width: var(--container-width);
+  height: 168px;
+  background: #ccc;
+}
+
+#modal {
+  background: #ccc;
+  position: fixed;
+  width: 450px;
+  height: 420px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#modal header {
+  background-color: var(--main-color);
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+}
+
+#modal header h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+}
+
+#modal .body {
+  display: flex;
+  align-items: center;
+  /*background: pink;*/
+  height: 100%;
+  padding: 0 30px;
+  position: relative;
+  top: -50px;
+}
+
+#modal .btn-close {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  border-style: none;
+  /*background: none;*/
+  background-color: transparent;
+}
+
+#modal .body p:nth-of-type(1) {
+  margin-bottom: 27px;
+}
+
+#modal.on {
+  display: block;
 }
