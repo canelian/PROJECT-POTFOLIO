@@ -60,7 +60,7 @@ body {
   color: white;
 }
 
-#gnb ul li.cat > a {
+#gnb ul li.on > a {
   border-bottom: 4px solid #fff;
 }
 
