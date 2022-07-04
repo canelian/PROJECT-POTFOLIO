@@ -27,19 +27,22 @@ fetch('https://raw.githubusercontent.com/csslick/animal-mobile/main/animal-data.
       }*/
       
       function showAnimals(obj){
-        // forEach() 반복문
-        obj.forEach(function(animal){
           //  console.log(animal.name);
           // 카테고리구분 dog | cat | bird
           // URL 파라미터(매개변수)
-          const query = location.search;
-          console.log(query);
+        const query = location.search;
+        console.log(query);
           // new URLSearchParams(query);
           // ?URL query문을 object(변수)로 변경
-          const params = new URLSearchParams(query).get('category');
-          console.log(params);
+        const params = new URLSearchParams(query).get('category');
+        if(params == null){
+            params = 'dog'
+        }
+        console.log(params);
           // let string = 'category=cat'; // 문자열
           // let category = "cat"; // 변수형
+          // forEach() 반복문
+        obj.forEach(function(animal){
           // 동물 데이터 출력
           if(params == animal.category){
             /*console.log('params = ', params);
