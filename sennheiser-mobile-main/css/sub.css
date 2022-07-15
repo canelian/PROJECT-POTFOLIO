@@ -1,0 +1,90 @@
+/*products*/
+#products .row {
+  flex-wrap: wrap;
+  /*칼럼사이 여백*/
+  gap: 40px 10px; /*수직 | 수평 gutter*/
+}
+
+#products .product {
+  width: calc(50% - 5px);
+  background: #ccc;
+}
+
+#products .product img {
+  width: 100%;
+}
+
+#products main p {
+  padding-top: 20px;
+}
+
+#products .product .info {
+  background-color: var(--bg-color2);
+}
+
+#products .product .info .category {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+
+#products .product .info .title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#products .product .info .price {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/*footer*/
+#main-footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#main-footer #sns {
+  padding-bottom: 20px;
+}
+
+#main-footer #sns a {
+  color: #fff;
+  padding-right: 1rem;
+}
+
+#main-footer #sns a:last-child {
+  margin-right: 0;
+}
+
+#main-footer .footer-menu span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+#main-footer .footer-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+#main-footer .footer-menu a {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+#main-footer .footer-menu .one {
+  font-weight: 400;
+}
+
+#main-footer .footer-menu .two {
+  font-weight: 500;
+}
